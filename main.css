@@ -10,47 +10,73 @@ body{
     align-items: center;
     max-width: 1000px;
     width: 300px;
-    height: 200px;
+    height: 250px;
     flex-wrap: wrap;
     background-color: rgba(255, 255, 255, 0.5);
 }
 
-
-.input_1{
-    grid-area: header; 
-    width: 100%;
-} 
-.input_2{
-    grid-area: header_2; 
-    width: 100%;
-}
-.direction{
-    grid-area: area; 
+.text_1{
+    grid-area: text_1;
     text-align: center;
 }
-.text{
-    grid-area: area_2;
+.text_2{
+    grid-area: text_2;
+    text-align: center;
+}
+.input_1{
+    grid-area: color_1; 
+    width: 100%;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    box-sizing: unset;
+    margin: 0;
+} 
+.input_2{
+    grid-area: color_2; 
+    width: 100%;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    box-sizing: unset;
+    margin: 0;
+}
+.direction{
+    grid-area: direction; 
+    text-align: center;
+    margin: 0;
+}
+.info{
+    grid-area: info;
     text-align: center;
 }
 .favourtie{ 
-    grid-area: semi_footer_1 ; 
+    grid-area: favourtie ; 
     text-align: center;
 }
 .display{
-    grid-area: semi_footer_2;
+    grid-area: display;
     text-align: center;
 }
 .reset{ 
-    grid-area: final; 
+    grid-area: reset; 
     text-align: center;
+    width: 100%;
+}
+.set_reset{
+    grid-area: set_reset;
+    text-align: center;
+    width: 100%;
 }
 .main {
     display: grid;
     grid-template-areas:
-        'header header header header_2 header_2 header_2'
-        'area area area area area area'
-        'semi_footer_1 semi_footer_1 semi_footer_1 semi_footer_2 semi_footer_2 semi_footer_2'
-        'final final final final final final'
-        'area_2 area_2 area_2 area_2 area_2 area_2'
+    'text_1 text_1 text_1 text_1 text_1 text_1'
+    'color_1 color_1 color_1 color_2 color_2 color_2'
+    'text_2 text_2 text_2 text_2 text_2 text_2'
+    'direction direction direction direction direction direction '
+    'favourtie favourtie favourtie display display display'
+    'reset reset reset reset reset reset'
+    'info info info info info info'
     ;
 }
