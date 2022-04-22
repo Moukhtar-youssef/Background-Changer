@@ -1,0 +1,56 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    width: 300px;
+    height: 200px;
+    flex-wrap: wrap;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+.input_1{
+    grid-area: header; 
+    width: 100%;
+} 
+.input_2{
+    grid-area: header_2; 
+    width: 100%;
+}
+.direction{
+    grid-area: area; 
+    text-align: center;
+}
+.text{
+    grid-area: area_2;
+    text-align: center;
+}
+.favourtie{ 
+    grid-area: semi_footer_1 ; 
+    text-align: center;
+}
+.display{
+    grid-area: semi_footer_2;
+    text-align: center;
+}
+.reset{ 
+    grid-area: final; 
+    text-align: center;
+}
+.main {
+    display: grid;
+    grid-template-areas:
+        'header header header header_2 header_2 header_2'
+        'area area area area area area'
+        'semi_footer_1 semi_footer_1 semi_footer_1 semi_footer_2 semi_footer_2 semi_footer_2'
+        'final final final final final final'
+        'area_2 area_2 area_2 area_2 area_2 area_2'
+    ;
+}
