@@ -1,10 +1,11 @@
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
-.container{
+
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,25 +16,18 @@ body{
     background-color: rgba(255, 255, 255, 0.5);
 }
 
-.text_1{
+.text_1 {
     grid-area: text_1;
     text-align: center;
 }
-.text_2{
+
+.text_2 {
     grid-area: text_2;
     text-align: center;
 }
-.input_1{
-    grid-area: color_1; 
-    width: 100%;
-    border: none;
-    padding: 0;
-    background-color: transparent;
-    box-sizing: unset;
-    margin: 0;
-} 
-.input_2{
-    grid-area: color_2; 
+
+.input_1 {
+    grid-area: color_1;
     width: 100%;
     border: none;
     padding: 0;
@@ -41,42 +35,59 @@ body{
     box-sizing: unset;
     margin: 0;
 }
-.direction{
-    grid-area: direction; 
+
+.input_2 {
+    grid-area: color_2;
+    width: 100%;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    box-sizing: unset;
+    margin: 0;
+}
+
+.direction {
+    grid-area: direction;
     text-align: center;
     margin: 0;
 }
-.info{
+
+.info {
     grid-area: info;
     text-align: center;
 }
-.favourtie{ 
-    grid-area: favourtie ; 
+
+.favourtie {
+    grid-area: favourtie;
     text-align: center;
 }
-.display{
+
+.display {
     grid-area: display;
     text-align: center;
 }
-.reset{ 
-    grid-area: reset; 
+
+.reset {
+    grid-area: reset;
     text-align: center;
     width: 100%;
 }
-.set_reset{
+
+.set_reset {
     grid-area: set_reset;
     text-align: center;
     width: 100%;
 }
+
 .main {
     display: grid;
     grid-template-areas:
-    'text_1 text_1 text_1 text_1 text_1 text_1'
-    'color_1 color_1 color_1 color_2 color_2 color_2'
-    'text_2 text_2 text_2 text_2 text_2 text_2'
-    'direction direction direction direction direction direction '
-    'favourtie favourtie favourtie display display display'
-    'reset reset reset reset reset reset'
-    'info info info info info info'
+        'text_1 text_1 text_1 text_1 text_1 text_1'
+        'color_1 color_1 color_1 color_2 color_2 color_2'
+        'text_2 text_2 text_2 text_2 text_2 text_2'
+        'direction direction direction direction direction direction '
+        'favourtie favourtie favourtie display display display'
+        'reset reset reset reset reset reset'
+        'info info info info info info'
     ;
 }
