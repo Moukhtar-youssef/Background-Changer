@@ -10,12 +10,6 @@ localStorage.setItem("reset_2" ,"#054189")
 reset_color_1 = localStorage.getItem("reset")
 reset_color_2 = localStorage.getItem("reset_2")
 // end reset variables
-// start favourite_color variables
-localStorage.setItem("value" , `${input_1.value}`)
-localStorage.setItem("value_2" , `${input_2.value}`)
-favourite_color_1 = localStorage.getItem("value")
-favourite_color_2 = localStorage.getItem("value_2")
-// end favourite_color variables
 
 
 setInterval(()=>{
@@ -23,9 +17,13 @@ setInterval(()=>{
             color_Text.innerHTML =`linear-gradient ${direction.value} ,${input_1.value},${input_2.value}`
         },1)
 function favourite_color(){
+    localStorage.setItem("value" , `${input_1.value}`)
+    localStorage.setItem("value_2" , `${input_2.value}`)
     document.body.style.backgroundImage = `linear-gradient(${direction.value} ,${input_1.value},${input_2.value})`;
 }
 function display_favourite(){
+    favourite_color_1 = localStorage.getItem("value")
+    favourite_color_2 = localStorage.getItem("value_2")
     input_1.value=`${favourite_color_1}`;
     input_2.value=`${favourite_color_2}`;
     document.body.style.backgroundImage = `linear-gradient(${direction.value} ,${favourite_color_1},${favourite_color_2})`;
