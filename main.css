@@ -78,7 +78,6 @@ body {
     text-align: center;
     width: 100%;
 }
-
 .main {
     display: grid;
     grid-template-areas:
